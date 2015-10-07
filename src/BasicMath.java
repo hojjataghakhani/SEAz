@@ -5,15 +5,15 @@ class BasicMath
     {
         return a + b;
     }
-
-    // TODO: subtract
+    public double devide(int a, int b)
+    {
+        return (a * 1.0) / (b * 1.0);
+    }
     public int subtract(int a, int b)
     {
         return a - b;
     }
-	// TODO: multiply
 	public int multiply(int a, int b){
 		return a * b;
 	}
-	// TODO: divide
 }
