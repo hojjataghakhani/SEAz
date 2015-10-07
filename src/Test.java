@@ -4,6 +4,7 @@ class Test
     {
         testSum();
         testMultiply();
+        testSubtract();
     }
 
     private static void testSum()
@@ -36,6 +37,22 @@ class Test
         else
         {
             System.out.println("multiply: Failed, expected = " + expected + ", result = " + result);
+        }
+    }
+    private static void testSubtract()
+    {
+        int a = 5;
+        int b = 6;
+        int expected = -1;
+        BasicMath bm = new BasicMath();
+        int result = bm.subtract(a, b);
+        if (result == expected)
+        {
+            System.out.println("Subtract: OK");
+        }
+        else
+        {
+            System.out.println("Subtract: Failed, expected = " + expected + ", result = " + result);
         }
     }
 }

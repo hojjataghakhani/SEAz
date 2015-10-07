@@ -7,6 +7,10 @@ class BasicMath
     }
 
     // TODO: subtract
+    public int subtract(int a, int b)
+    {
+        return a - b;
+    }
 	// TODO: multiply
 	public int multiply(int a, int b){
 		return a * b;
