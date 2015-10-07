@@ -3,6 +3,7 @@ class Test
     public static void main(String[] args)
     {
         testSum();
+        testMultiply();
     }
 
     private static void testSum()
@@ -12,8 +13,6 @@ class Test
         int expected = 11;
         BasicMath bm = new BasicMath();
         int result = bm.sum(a, b);
-        int multiply = bm.multiply(a, b);
-        int multiply_expected = 30;
         if (result == expected)
         {
             System.out.println("Sum: OK");
@@ -22,13 +21,21 @@ class Test
         {
             System.out.println("Sum: Failed, expected = " + expected + ", result = " + result);
         }
-        if (multiply == multiply_expected)
+    }
+    private static void testMultiply()
+    {
+        int a = 5;
+        int b = 6;
+        int expected = 30;
+        BasicMath bm = new BasicMath();
+        int result = bm.multiply(a, b);
+        if (result == expected)
         {
-            System.out.println("Multiply: OK");
+            System.out.println("multiply: OK");
         }
         else
         {
-            System.out.println("Multiply: Failed, expected = " + multiply_expected + ", result = " + multiply);
+            System.out.println("multiply: Failed, expected = " + expected + ", result = " + result);
         }
     }
 }
